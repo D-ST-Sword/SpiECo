@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spieco"
+version = "0.1.0"
+description = "Privileged knowledge consolidation through spiking evidence dynamics"
+requires-python = ">=3.10"
+authors = [{name = "Jiahao Qin"}, {name = "Yiwen Wang"}]
+dependencies = ["torch>=2.0", "numpy>=1.24,<2", "scikit-learn>=1.2", "transformers>=4.35,<5", "spikingjelly==0.0.0.0.14"]
+
+[project.scripts]
+spieco = "spieco.cli:main"
+
+[project.urls]
+Repository = "https://github.com/D-ST-Sword/SpiECo"
+
+[tool.setuptools.packages.find]
+include = ["spieco*"]
