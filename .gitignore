@@ -44,3 +44,7 @@ wandb/
 *.jpeg
 *.mp4
 *.wav
+
+# Approved README figure exports only; research artifacts remain excluded.
+!assets/spieco_architecture.pdf
+!assets/spieco_architecture.png
